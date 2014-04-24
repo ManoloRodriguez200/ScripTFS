@@ -183,3 +183,4 @@ foreach ($node in $collectionNodes)
 {
     Write-Output $("COLLECTION: " + $node.Resource.DisplayName)
     Get-TFSGroupMembership $($ServerUri + $node.Resource.DisplayName) -ShowEmptyGroups
+}
